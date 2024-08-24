@@ -5,10 +5,8 @@ on: push
 jobs:
     print:
         runs-on: ubuntu-latest
-
         steps:
             - run: printenv | grep 'LITERAL_'
-            
             env:
                 LITERAL_NULL: ${{null}}
                 LITERAL_BOOLEAN: ${{true}}
