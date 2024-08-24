@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - runs: printenv | grep 'LITERAL_'
+            - run: printenv | grep 'LITERAL_'
             
             env:
                 LITERAL_NULL: ${{null}}
@@ -16,4 +16,3 @@ jobs:
                 LITERAL_STRING: ${{'Hello'}}
                 LITERAL_OMIT_STRING: World
 
-                
