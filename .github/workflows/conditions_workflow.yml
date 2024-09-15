@@ -4,8 +4,7 @@ on: push
 
 jobs:
     skip-or-run:
-        if: ${{github.actor == 'octocat'}}
+        if: ${{github.actor == 'rnsm504'}}
         runs-on: ubuntu-latest
         steps:
             - run: echo "Hello"
-            
