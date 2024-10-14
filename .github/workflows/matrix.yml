@@ -10,5 +10,4 @@ jobs:
                 runs-on: ${{matrix.os}}
                 steps:
                     - runs: echo "$[RUNNER_OS]"
-                    shell: bash
-                    
+                      shell: bash
