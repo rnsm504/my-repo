@@ -6,7 +6,6 @@ jobs:
     log:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "::echo::This is an error"
+            - run: echo "::error::This is an error"
             - run: echo "::warning::This is a warinig"
             - run: echo "::notice::This is a notice"
-            
